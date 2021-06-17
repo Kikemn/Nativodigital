@@ -11,6 +11,11 @@ const app = require('express')
 ![](./src/storage/imgs/js.png)
 
 ## Example the post
+### Patient
+```
+https://localhost:27070/v2/patient
+```
+
 ```
 {
     "name": "Enrique Marrufo Novelo",
@@ -20,7 +25,9 @@ const app = require('express')
     "city": "Mérida,Yucatan"
 }
 ```
+## Run the database
 
+> $sudo docker idcontainer
 
 ## Project requirements:
 + express
@@ -32,5 +39,16 @@ const app = require('express')
 + sepertest
 + mocha
   
+## .env configure
+```
+APP_PORT=5000
+APP_HOST=http://localhost
+
+DB_NAME=store
+DB_PORT=27017
+DB_HOST=localhost
+```
+
 ### notes
 >don't forget to make your commits
+
